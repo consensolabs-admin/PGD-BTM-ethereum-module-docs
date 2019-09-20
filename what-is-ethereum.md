@@ -1,7 +1,5 @@
 # What is Ethereum?
 
-
-
 ## Bitcoin comparison
 
 ## Blockchain components
