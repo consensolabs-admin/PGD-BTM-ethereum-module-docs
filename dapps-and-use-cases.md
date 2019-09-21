@@ -51,11 +51,32 @@ DeFi is a movement to transform the traditional finance products and protocols i
 
 ### MakerDAO's DAI
 
-DAI is a decentralized stable coin whose value is pegged to the USD and backed by cryptocurrency.
+**DAI** is a decentralized stable coin whose value is pegged to the USD and backed by cryptocurrency.
 
-DAI uses system called to Collateralized dept positions \(CDPs\) to back and stabilize the value of DAI. 
+DAI uses system called to **Collateralized dept position** \(CDP\) to back and stabilize the value of DAI. During the creation of CDP,  the user will provide  ETH as collateral to mint DAI tokens which will act as dept instrument. User needs to always over collateralize \(at least 150 %\) to guarantee the debt position. In case the ETH value goes drastically down and the collateral to debt ration falls below 150 %, then the collateral will be liquidated automatically paying back the excess collateral to the owner.
+
+{% hint style="info" %}
+#### Advantages over traditional loans
+
+* Low cost loans
+* Faster transactions
+* No KYC, Credit requirement
+* Online all the time
+{% endhint %}
+
+### InstaDApp
+
+It is a DeFi tool that provides a bridge to the emerging decentralized finance protocols such as MakerDAO CDP, Compound finance, UniSwap exchange.
+
+The sleek design of the InstaDapp makes CDP creation intuitive. It also provides a CDP explorer called [MakerScan](https://makerscan.io).
 
 ## Decentralized Identity \(uPort, Civic\)
 
-## ENS
+## Ethereum naming service \(ENS\)
+
+ENS is a decentralized and public naming service on Ethereum blockchain. It facilitates to easily identify the user address with human readable names similar to website domain names. It also allows to create sub domains just like centralized DNS. Registering a domain will cost $ 5 / year.
+
+Ethereum addresses can be registered at the official [ENS Manager](https://manager.ens.domains) or other wallets such as [MyEtherWallet](https://www.myetherwallet.com/access-my-wallet). 
+
+
 
