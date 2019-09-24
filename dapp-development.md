@@ -38,7 +38,97 @@ MetaMask is a browser extension that acts as a bridge between the client applica
 
 It also comes with a secure wallet that lets user manage multiple accounts and sign the transaction while interacting with the node.
 
+### [Ganache](https://www.trufflesuite.com/ganache) 
 
+A personal local blockchain for development purpose that can emulate most of the behavior of Ethereum network. 
+
+{% hint style="danger" %}
+Although **Ganache** helps to test the DApps locally, it is always advised to run the DApp on testnet before deploying it to the mainnet.
+{% endhint %}
+
+Ganache can be installed just as a CLI application and as a [desktop application.](https://www.trufflesuite.com/ganache) CLI application can be installed using NPM:
+
+```text
+$ sudo npm install ganache-cli -g 
+```
 
 ### Creating a basic DApp \(TODO list\)
+
+#### Smart contract
+
+`Task` structure
+
+```text
+struct Task {
+  uint id;
+  string content;
+  bool completed;
+}
+```
+
+`TaskCreated` event
+
+```text
+// CREATE TaskCreated event
+event TaskCreated(
+  uint id,
+  string content,
+  bool completed
+);
+
+```
+
+`TaskToggled` event
+
+```text
+event TaskToggled(
+  uint id,
+  bool completed
+);
+```
+
+`CreateTask` function
+
+```text
+taskCount ++;
+tasks[taskCount] = Task(taskCount, _content, false);
+emit TaskCreated(taskCount, _content, false);
+```
+
+`toggleTask` function
+
+```text
+Task memory _task = tasks[_id];
+_task.completed = !_task.completed;
+tasks[_id] = _task;
+emit TaskCompleted(_id, _task.completed);
+```
+
+**1.Start a private blockchain \(Ganache\).**
+
+```text
+ $ ganache-cli --seed amityonline
+```
+
+#### 2.  Deploy the contract
+
+1. Open [https://remix.ethereum.org](https://remix.ethereum.org/)
+2. Paste the Solidity contract code
+3. Compile and deploy the contract to the local blockchain
+4. Note down the deployed contract address and update it in the front end application
+
+#### 3. Run the front end React application
+
+```text
+ $ cd todo-list/
+ $ npm start
+```
+
+#### 
+
+
+
+
+
+
 
