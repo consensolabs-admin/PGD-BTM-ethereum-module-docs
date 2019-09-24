@@ -14,6 +14,26 @@ Node.js can be downloaded and installed from the official [site](https://nodejs.
 
 Linux based systems can install the Node through package manager tool such as APT. Here is an install guide for [Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04).
 
+### Download the coding resources
+
+All the code used in this guide are available in the GitHub repository. Make sure you have the latest version of the code.
+
+```text
+git clone https://github.com/koshikraj/PGD-BTM-ethereum-module
+```
+
+{% hint style="info" %}
+The entire documentation is also available on [GitHub](https://github.com/consensolabs-admin/PGD-BTM-ethereum-module-docs).
+{% endhint %}
+
+
+
+
+
+
+
+
+
 
 
 
