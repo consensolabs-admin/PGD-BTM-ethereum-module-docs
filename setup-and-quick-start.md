@@ -28,6 +28,14 @@ The entire documentation is also available on [GitHub](https://github.com/consen
 
 
 
+### IDEs
+
+Make sure you have an editor or IDE to write the programs. Following plugins can be installed for better development experience.
+
+* [Vim solidity](https://github.com/tomlion/vim-solidity) - Vim syntax file for solidity
+* [Solidity VS Code](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Visual Studio Code extension that adds support for Solidity
+* [Intellij-Solidity Plugin](https://github.com/intellij-solidity/intellij-solidity/wiki) Open-source plug-in for IntelliJ.
+
 
 
 
