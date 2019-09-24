@@ -132,9 +132,28 @@ Functions can take any number of inputs and return any number of outputs.
 
 
 
+#### Constructors
 
+Special function named constructor is called only once during the contract creation. Often used to update the state of the contract to some default values during the contract deployment.
 
-#### constructors, self destruct 
+```text
+constructor() public {
+    // Constuct Something
+    }
+```
+
+#### Self destruct 
+
+A contract can only be deleted by explicitly calling a high level built in function called selfdestruct. This command must be present in the contract to make it deletable.
+
+ It takes an address as an argument to which the contract balance will be sent to.
+
+```text
+function destroy() public {
+    require(msg.sender == owner);
+    selfdestruct(address recipient) 
+}
+```
 
 #### Modifiers, Inheritance, events
 
