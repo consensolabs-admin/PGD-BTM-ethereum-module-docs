@@ -120,7 +120,7 @@ emit TaskCompleted(_id, _task.completed);
 #### 3. Run the front end React application
 
 ```text
- $ cd todo-list/
+ $ cd dapp-development/todo-list/
  $ npm start
 ```
 

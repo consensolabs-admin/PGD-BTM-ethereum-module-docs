@@ -8,7 +8,7 @@ description: Introduction to smart contracts and Solidity programming
 >
 >  **- Nick Szabo**
 
-Smart contract in context of distributed ledger is all about making the script mare intelligent. Smart contract when deployed in a decentralized network  allows it to be verified and enforced in a self-executing manner and removes any third party arbitrator.
+Smart contract in context of distributed ledger is all about making the script more intelligent. Smart contract when deployed in a decentralized network  allows it to be verified and enforced in a self-executing manner and removes any third party arbitrator.
 
 Ethereum allows intelligent script to be deployed and executed in the network. Ethereum achieves this with the help of virtual machine \(EVM\) and high level scripting languages such as Solidity.
 
