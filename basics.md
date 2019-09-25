@@ -11,13 +11,40 @@ Ether \(ETH or Ξ\) is the native cryptocurrency used on the Ethereum network an
 * Store of value \(e.g. in lending collateral\)
 * A medium of exchange \(e.g. in trade and payments\)
 
-## Transactions
+## Types of accounts
 
 ## Wallets
 
-## Blockchain explorers
+In its basic sense, wallet is something manages keys and addresses , tracks and transacts user's money.
 
-## Types of accounts
+But most of the Ethereum wallets are capable fully interacting with smart contracts and Ethereum nodes.
+
+* Ledger Nano S \(Hardware wallet\)
+* MetaMask \(Web wallet + DApp Bridge \)
+* [MyEtherWallet](https://www.myetherwallet.com/) \(Web + Mobile wallet\)
+* TrustWallet \(Mobile wallet\)
+
+## Transactions
+
+These are signed messages originated by externally owned account and transmitted to the Ethereum network  and finally recorded on the blockchain.
+
+{% hint style="info" %}
+Transactions are the only thing responsible to change the state and execute the smart contracts.
+{% endhint %}
+
+
+
+![Transaction structure](.gitbook/assets/amity-transactions.png)
+
+## Smart contracts
+
+## GAS
+
+## Blockchain and explorers
+
+## EVM
+
+
 
 ## Ethereum clients
 
@@ -27,9 +54,5 @@ Ether \(ETH or Ξ\) is the native cryptocurrency used on the Ethereum network an
 
 ### Working with the private network
 
-## EVM
-
-## Smart contracts
-
-## GAS
+## 
 
