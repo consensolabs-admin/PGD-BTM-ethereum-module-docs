@@ -95,6 +95,13 @@ Even though mainnet is where all the smart contract reside, testnet is required 
 * Testnet has less congestion than mainnet
 {% endhint %}
 
+Different networks:
+
+* **Ropsten testnet - 3 \(PoW\)**
+* **Rinkeby tesnet -4 \(PoA\)**
+* **Goerli testnet - 5 \(PoA\)**
+* **Kovan testnet - 32 \(PoA\)**
+
 ### Working with the private network
 
 Although testnet is a convenient way to test the contract, it is still not a preferred network to test the development code. Setting up a private instance with several or single node is preferred way to test the development contract.
