@@ -159,11 +159,46 @@ gasPrice is measured in gwei.
 
 The amount of gas units required for each transaction is represented as **gasLimit**. A simple transfer ETH transaction required 21,000 gas units.
 
-## Blockchain and explorers
-
-## EVM
 
 
+## Ethereum virtual machine \(EVM\)
+
+EVM is Ethereum's turing complete virtual machine that executes transactions and responsible for transition of the state. But the computation is limited by the amount of gas available in the transaction.
+
+### Transaction execution
+
+Every transaction will be validated by the node before they are executed:
+
+* Should have valid headers
+* Should have valid signature of the creator
+* Must have enough gas for execution \(21,000 units for a simple value transfer transaction\)
+
+A valid transaction will be executed by the EVM. A transaction can be:
+
+* **Contract creation**: A new contract account is created
+* **Message calls**:  Will pass input data in anticipation of execution of some logic
+
+Both of these transactions will modify the state if executed successfully.
+
+![State modification](.gitbook/assets/amity-state-trans.png)
+
+{% hint style="info" %}
+The state information and modification is stored by full node using data structure called Modified **Merkle Patricia Trie**.
+{% endhint %}
+
+## [Blockchain and mining](https://etherscan.io)
+
+All the transactions responsible for the state change are clubbed into a data structure called block. 
+
+**Miners** are special nodes responsible for finalizing the block and attaching to the blockchain by creating a proof by solving the has puzzle \(Proof of Work\). 
+
+Ethereum uses modified PoW called Ethash which is ASIC resistance. The Serenity release will have Proof of Stake as consensus mechanism.
+
+{% hint style="info" %}
+Due to the lower block time \(10 - 15 secs\) forking is quite common in Ethereum. Due to this, Ethereum also incentivizes those orphaned block which are not the part of final blockchain.
+{% endhint %}
+
+![Block header structure](.gitbook/assets/amity-state-trans-2.png)
 
 ## 
 

@@ -4,7 +4,7 @@ description: 'About,  history, development stages'
 
 # What is Ethereum?
 
-> Ethereum - "the world computer". It is a deterministic but practically unbounded state camachine with a globally accessible singleton state and virtual machine that applies state changes. 
+> Ethereum - "the world computer". It is a deterministic but practically unbounded state machine with a globally accessible singleton state and virtual machine that applies state changes. 
 >
 >  - [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)
 
