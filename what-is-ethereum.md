@@ -66,7 +66,11 @@ There are several intermediate hard forks that have occurred.
 * **Consensus mechanism**: Uses Ethash \(Proof-of-work based\)
 * **State machine**: The state of the Ethereum is modified by the transactions that are processed by Ethereum virtual machine \(EVM\). The state is stored in a data structure called Merkle Patricia tree.
 
-Ethereum and Cryptography
+## Ethereum and Cryptography
+
+* Hash function - Keccak-256
+* Digital signature - ECDSA \(Elliptic Curve Digital Signature Algorithm\)
+* Key generation - ECC \(Elliptic Curve Cryptography \)
 
 ## Turing completeness of Ethereum 
 
