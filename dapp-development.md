@@ -69,7 +69,7 @@ struct Task {
 `TaskCreated` event
 
 ```text
-// CREATE TaskCreated event
+
 event TaskCreated(
   uint id,
   string content,
@@ -101,7 +101,61 @@ emit TaskCreated(taskCount, _content, false);
 Task memory _task = tasks[_id];
 _task.completed = !_task.completed;
 tasks[_id] = _task;
-emit TaskCompleted(_id, _task.completed);
+emit TaskToggled(_id, _task.completed);
+```
+
+#### **DApp client**
+
+`loadBlockchainData` function
+
+```text
+const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
+const accounts = await web3.eth.getAccounts();
+this.setState({ account: accounts[0] });
+this.todoList = new web3.eth.Contract(TODO_LIST_ABI, TODO_LIST_ADDRESS);
+this.loadTasks();
+
+```
+
+
+
+`loadTasks` function
+
+```text
+const taskCount = await this.todoList.methods.taskCount().call();
+this.setState({ taskCount, tasks: []});
+
+for (let i = 1; i <= taskCount; i++) {
+  const task = await this.todoList.methods.tasks(i).call();
+  this.setState({
+        tasks: [...this.state.tasks, task]
+    })
+}
+
+this.setState({ loading: false })
+```
+
+
+
+`createTask` function
+
+```text
+this.setState({ loading: true });
+this.todoList.methods.createTask(content).send({ from: this.state.account })
+.once('receipt', (receipt) => {
+    this.loadTasks();
+})
+```
+
+`toggleTask` function
+
+```text
+this.setState({ loading: true });
+this.todoList.methods.toggleTask(taskId).send({ from: this.state.account })
+.once('receipt', (receipt) => {
+    this.loadTasks();
+
+})
 ```
 
 **1.Start a private blockchain \(Ganache\).**
