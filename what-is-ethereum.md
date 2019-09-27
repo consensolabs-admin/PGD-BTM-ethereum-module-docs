@@ -74,5 +74,11 @@ There are several intermediate hard forks that have occurred.
 
 ## Turing completeness of Ethereum 
 
+Ethereum is a turing complete system. That means it can function as turing machine executing general purpose programs with nested conditions, loops etc.
 
+{% hint style="info" %}
+A Turing complete system can be used to simulate any Turing machine.
+{% endhint %}
+
+The halting problem is Ethereum is solved by introducing the concept of gas for execution of the transaction.
 

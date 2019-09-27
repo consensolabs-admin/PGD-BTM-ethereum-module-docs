@@ -100,7 +100,7 @@ Different networks:
 * **Ropsten testnet - 3 \(PoW\)**
 * **Rinkeby tesnet -4 \(PoA\)**
 * **Goerli testnet - 5 \(PoA\)**
-* **Kovan testnet - 32 \(PoA\)**
+* **Kovan testnet - 42 \(PoA\)**
 
 ### Working with the private network
 

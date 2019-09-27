@@ -155,7 +155,31 @@ function destroy() public {
 }
 ```
 
-#### Modifiers, Inheritance, events
+#### Modifiers
+
+It is a special type of function that modifies the behavior of other function. Modifier name is added to the function declaration.
+
+```text
+modifier onlyOwner {
+    require(msg.sender == owner);
+}
+
+function destroy() public onlyOwner {
+    selfdestruct(owner);
+}
+```
+
+####  Inheritance
+
+Supports inheritance to extend a contract with additional functionality.
+
+```text
+contract Child is Parent {
+...
+}
+```
+
+####  Events
 
 #### Assert, require, revert
 
