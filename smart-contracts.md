@@ -18,9 +18,16 @@ The term "_smart contract_" is sometimes misleading because Ethereum script is n
 
 ## Smart contract life cycle
 
+* Contract is created with a special contract creation transaction
+* Contract can call other contracts
+* Contract updates the global state only if execution is successful
+* Contract can also be destroyed with a special instruction \(SELFDESTRUCT\)
+
 ## Smart contract languages
 
-Ethereum smart contract languages are high level imperative programming language that compiles to EVM bytecode. Since Ethereum smart contract is turing complete, it will provide most of the constructs that are present in the general purpose programming language.
+Ethereum smart contract languages are high level imperative programming language that compiles to EVM bytecode. Since Ethereum smart contract is turing complete, it will provide most of the constructs that are present in the general purpose programming language,
+
+Ex: Serpant, Vyper\(syntax similar to Python\), Bamboo, Solidity 
 
 ## Solidity
 
