@@ -137,7 +137,43 @@ Functions can take any number of inputs and return any number of outputs.
 
 ```
 
+#### View function
 
+Function that doesn't modify the state of the contract
+
+* Will not write to state variables
+* Will not emit events
+* Will not create other events
+* Will not use`selfdestruct`.
+* Will not send Ether via calls.
+* Will not call any function not marked `view` or `pure`.
+* Will not use low-level calls.
+* Will not use inline assembly that contains certain opcodes.
+
+```text
+string public owner;
+
+function getOwner() public view returns (string) {
+  return owner;
+}
+```
+
+#### Pure function
+
+Function that doesn't read or modify the state
+
+#### Fallback function
+
+Fallback function  is an unnamed function that will be executed if none of the function match the function call.
+
+```text
+contract Payment {
+
+    function() external payable {
+    // Transfer Ether
+   }
+}
+```
 
 #### Constructors
 
@@ -188,9 +224,17 @@ contract Child is Parent {
 
 ####  Events
 
-#### Assert, require, revert
+#### Error handling
 
-#### Send, call
+`Assert` and `require` evaluates the condition and halts the execution if the condition is false.
+
+```text
+require(msg.sender == owner);
+```
+
+ `Revert` function intentionally halts the contract execution.
+
+#### 
 
 #### Sample contract
 
