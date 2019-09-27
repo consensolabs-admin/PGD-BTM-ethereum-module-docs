@@ -117,7 +117,54 @@ $ truffle test
 
 ### Client application \(Truffle + React + Web3.js + MetaMask\) 
 
+`loadBlockchainData` function
 
+```text
+const web3 = this.web3;
+const accounts = await web3.eth.getAccounts();
+this.setState({ account: accounts[0] });
+
+const networkId = await web3.eth.net.getId();
+const networkData = Color.networks[networkId];
+if(networkData) {
+  const abi = Color.abi;
+  const address = networkData.address;
+  this.contract = new web3.eth.Contract(abi, address);
+  await this.loadColorTokens();
+} else {
+  window.alert('Smart contract not deployed to detected network.')
+}
+```
+
+
+
+`loadColorTokens` function
+
+```text
+const totalSupply = await this.contract.methods.totalSupply().call();
+this.setState({ totalSupply });
+
+for (var i = 1; i <= totalSupply; i++) {
+    const color = await this.contract.methods.colors(i - 1).call();
+    this.setState({
+        colors: [...this.state.colors, color]
+    })
+}
+```
+
+
+
+`mint` function
+
+```text
+this.contract.methods.mint(color).send({ from: this.state.account })
+.on('transactionHash', (receipt) => {
+    console.log('created');
+  this.setState({
+    colors: [...this.state.colors, color]
+  })
+})
+```
 
 **1.Start a private blockchain \(Ganache\).**
 
