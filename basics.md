@@ -124,7 +124,11 @@ geth --datadir node1/ init devnet.json
 geth --datadir node1/ --syncmode 'full' --port 30312 --rpc --rpcaddr 'localhost' --rpcport 8502 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://3ec4fef2d726c2c01f16f0a0030f15dd5a81e274067af2b2157cafbf76aa79fa9c0be52c6664e80cc5b08162ede53279bd70ee10d024fe86613b0b09e1106c40@127.0.0.1:30310' --networkid 1515 --gasprice '0' --unlock '0x80805177b463B288dE649d94CB70F4779522f119' --allow-insecure-unlock --password password.txt --mine
 ```
 
+Interact with the node:
 
+```text
+eth.sendTransaction({from:'0x66f6780B3A72E5AEd24Ce175c0Fd533Dd54020e3', to:'0x958543756A4c7AC6fB361f0efBfeCD98E4D297Db', value: web3.toWei(1)})
+```
 
 ## Transactions
 
