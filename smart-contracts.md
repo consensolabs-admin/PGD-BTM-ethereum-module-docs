@@ -59,6 +59,9 @@ solc --abi Greetings.sol
 
 ### GAS consideration
 
+* Avoid dynamically sized arrays
+* Avoid calls to other unknown contracts
+
 ### Programming with Solidity
 
 Structure of the solidity contract is similar to classes in object oriented languages. Just like general purpose programs Solidity contract can have _variables_, _functions_, _datatypes_ such as _struct_, _enum_. Further, contracts can _inherit_ other contracts and _implement_ inter
