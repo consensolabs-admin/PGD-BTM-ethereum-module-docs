@@ -4,11 +4,27 @@ description: Promising use cases and DApps
 
 # DApps and Use Cases
 
-
-
 ## Tokens and Crowdfunding
 
-## DAO \(Moloch DAO, DAOStack\)
+Most obvious use of tokens is as digital private currencies. But tokes could be used in several different ways:
+
+* Currency
+* Asset
+* Equity
+* Identity
+* Utility
+
+The most famous use of token was in crowd funding by promising a value or utility to the new token in exchange for a popular currency such as Ether.
+
+{% hint style="warning" %}
+Although ICO was a popular phenomenon among the developers, many scammers took advantage by falsifying the value of tokens.
+{% endhint %}
+
+## Decentralized autonomous organization \(DAO\)
+
+Its decentralized model to organize, govern the profit and non profit businesses. The investors can directly and collaboratively take decisions.
+
+Ex: [Moloch DAO](https://molochdao.com), [DAOStack](https://daostack.io)
 
 ## Decentralized exchange \(DEX\) 
 
@@ -36,8 +52,6 @@ DEX helps to exchange one digital asset with the other without a central authori
 * No customer support in case of unexpected behavior
 * Limited to transactions within a chain
 {% endhint %}
-
-
 
 ## Decentralized finance \(DeFi\) protocols
 
