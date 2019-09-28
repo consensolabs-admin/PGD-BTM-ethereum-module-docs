@@ -65,7 +65,13 @@ Structure of the solidity contract is similar to classes in object oriented lang
 
 #### Visibility: 
 
-`external`, `public`, `internal` or `private`
+ `public` : Can be accessed from anywhere \(contract or EOA\)
+
+`external`: Cab be accessed from EOA 
+
+`internal` : Can be accessed from within the contract \(including derived contract\)
+
+ `private`: Can be accessed only with the contract
 
 #### [Data types](https://solidity.readthedocs.io/en/v0.5.11/types.html)
 
@@ -223,6 +229,8 @@ contract Child is Parent {
 ```
 
 ####  Events
+
+These are used to send transaction receipts to the invoker. Events are defined with `event` keyword and called with `emit` keyword.
 
 #### Error handling
 
