@@ -34,7 +34,7 @@ Blockchain can help realize savings up to $27 billion in cross border payments a
 #### Few of the promising case studies
 
 * [Project i2i](https://consensys.net/enterprise-ethereum/use-cases/banking-and-finance/project-i2i/) - Blockchain Payments in the Philippines
-* [Project Khokha](https://consensys.net/enterprise-ethereum/use-cases/banking-and-finance/project-khokha/) -  Blockchain for central banking in South America
+* [Project Khokha](https://consensys.net/enterprise-ethereum/use-cases/banking-and-finance/project-khokha/) -  Blockchain for central banking in South Africa
 
 ## Ethereum platforms for business
 
