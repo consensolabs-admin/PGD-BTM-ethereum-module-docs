@@ -6,7 +6,7 @@ description: Promising use cases and DApps
 
 ## [Tokens](https://coinmarketcap.com) and Crowdfunding
 
-Most obvious use of tokens is as digital private currencies. But tokes could be used in several different ways:
+Most obvious use of tokens is as digital private currencies. But tokens could be used in several different ways:
 
 * Currency
 * Asset
