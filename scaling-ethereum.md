@@ -21,7 +21,7 @@ Nodes create a channel and perform a series of transactions and commit only the 
 
 ![Off chain state channel](.gitbook/assets/state-channel.png)
 
-### Raiden Network
+### [Raiden Network](http://raiden-network.readthedocs.io)
 
 *  Raiden Network is an off-chain scaling solution for performing ERC20-compliant token transfers on the Ethereum blockchain
 * Ethereum’s version of **Lightning Network**
