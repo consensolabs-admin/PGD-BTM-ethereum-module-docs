@@ -32,7 +32,7 @@ DEX helps to exchange one digital asset with the other without a central authori
 
 ### Examples
 
-* [Uniswap](https://uniswap.io/)
+* [Uniswap](https://uniswap.exchange/swap)
 * [KyberSwap](http://kyberswap.com)
 * [AirSwap](https://instant.airswap.io/)
 * [Project 0x](https://0x.org/)
@@ -50,7 +50,7 @@ DEX helps to exchange one digital asset with the other without a central authori
 
 * Lack of liquidity
 * No customer support in case of unexpected behavior
-* Limited to transactions within a chain
+* Limited to transactions only within a chain
 {% endhint %}
 
 ## Decentralized finance \(DeFi\) protocols
@@ -84,7 +84,11 @@ It is a DeFi tool that provides a bridge to the emerging decentralized finance p
 
 The sleek design of the InstaDapp makes CDP creation intuitive. It also provides a CDP explorer called [MakerScan](https://makerscan.io).
 
-## Decentralized Identity \(uPort, Civic\)
+## Decentralized Identity 
+
+Self sovereign identity \(SSI\) lets us to control and main our identity without trusting anyone. I also helps to achieve access control information by easily exchanging the credential information.
+
+Examples: [uPort](https://www.uport.me/), [Civic](https://www.civic.com/).
 
 ## Ethereum naming service \(ENS\)
 
