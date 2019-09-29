@@ -39,6 +39,13 @@ Steps to created a Raiden micro payment:
 4. Create a channel and deposit token
 5. Create a transaction
 
+Running a node:
+
+```text
+./raiden --network-id kovan --keystore-path  ./node1/keystore/ --eth-rpc-endpoint "https://kovan.infura.io/v3/52df69ef00614e059a707918df501d90" --environment-type development --accept-disclaimer --api-address http://127.0.0.1:5001
+
+```
+
 ## Sidechains 
 
 Side chain is a separate chain that is attached to the main chain using two way peg. The side chain mechanism allows asset to be moved between the chains by locking and unlocking those assets.
@@ -64,7 +71,7 @@ Matic testnet RPC url: `https://testnet2.matic.network`
 Ethereum’s Serenity upgrade will bring Sharding, Proof of Stake, a new virtual machine \(eWASM\) and more
 
 * **Phase 0 - Beacon chain:** Implementation of Casper Proof of Stake
-* **Phase 1 -  Chard chains:** Achieve scalability as they allow parallel transaction throughput.
+* **Phase 1 -  Shard chains:** Achieve scalability as they allow parallel transaction throughput.
 * **Phase 2 - State execution:** Introduction of new virtual machine \(based on eWASM\). It'll support accounts, contracts, state, and other abstractions 
 
 
