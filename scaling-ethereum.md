@@ -59,5 +59,13 @@ The existing smart contract can be deployed directly to the Matic side chain wit
 Matic testnet RPC url: `https://testnet2.matic.network`
 {% endhint %}
 
-## Ethereum 2.0
+## Ethereum 2.0 \(Serenity\)
+
+Ethereum’s Serenity upgrade will bring Sharding, Proof of Stake, a new virtual machine \(eWASM\) and more
+
+* **Phase 0 - Beacon chain:** Implementation of Casper Proof of Stake
+* **Phase 1 -  Chard chains:** Achieve scalability as they allow parallel transaction throughput.
+* **Phase 2 - State execution:** Introduction of new virtual machine \(based on eWASM\). It'll support accounts, contracts, state, and other abstractions 
+
+
 

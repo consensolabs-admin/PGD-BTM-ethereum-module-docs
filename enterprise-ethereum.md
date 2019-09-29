@@ -38,6 +38,7 @@ Blockchain can help realize savings up to $27 billion in cross border payments a
 
 ## Ethereum platforms for business
 
+* [Quorum](https://github.com/jpmorganchase/quorum) by JP Morgan Chase
 * [Hyperledger Besu](https://pegasys.tech/enterprise/) by Pegasys
 * [Kaleido](https://kaleido.io/)
 
