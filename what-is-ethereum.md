@@ -41,7 +41,7 @@ Although Ethereum is highly influenced by Bitcoin, they have some major differen
 
 As Bitcoin's popularity grew people saw the potential of decentralization beyond money. Building upon Bitcoin proved difficult due its self imposed limitations. 
 
-* During 2013, Vitalik Buterin, a Bitcoin enthusiast proposed enhancement to Bitcoin and Mastercoin. Her later proposed alternated language to Mastercoin. But it wasn't adopted by the team.
+* During 2013, Vitalik Buterin, a Bitcoin enthusiast proposed enhancement to Bitcoin and Mastercoin. He later proposed alternated language to Mastercoin. But it wasn't adopted by the team.
 * In December 2013, Vitalik published the whitepaper for Ethereum: turing complete blockchain.
 * Later Vitalik along with Gavin Wood and Joseph Lubin started working the implementation until 2015.
 
