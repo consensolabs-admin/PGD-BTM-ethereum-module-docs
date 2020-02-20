@@ -34,7 +34,7 @@ web3.eth.getBlockNumber(console.log);
 
 ![MetaMask Bridge \(https://metamask.io\)](.gitbook/assets/ethereum-metamask-chrome.png)
 
-MetaMask is a browser extension that acts as a bridge between the client application and the Ethereum node. It allows to connect with the Ethereum mainnet, testnet \(Ropsten, Koban, Rinkeby and Goerli\) nodes without running their clients locally.
+MetaMask is a browser extension that acts as a bridge between the client application and the Ethereum node. It allows to connect with the Ethereum mainnet, testnet \(Ropsten, Kovan, Rinkeby and Goerli\) nodes without running their clients locally.
 
 It also comes with a secure wallet that lets user manage multiple accounts and sign the transaction while interacting with the node.
 
